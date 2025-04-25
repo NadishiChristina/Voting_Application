@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Image from '../assets/404.png'
+import Image from '../assets/404-error-page.gif'
 
 const ErrorPage = () => {
     const Navigate = useNavigate()
