@@ -7,6 +7,7 @@ import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   return (
+    <nav>
     <div className="container nav_container">
       <Link to="/" className='nav_logo'>Vote</Link>
       <div>
@@ -16,9 +17,10 @@ const Navbar = () => {
           <NavLink to="/logout">Logout</NavLink>
         </menu>
         <button className="theme_toggle-btn"><TbMoon /></button>
-        <button className="theme_toggle-btn"><HiMiniBars3BottomLeft /></button>
+        <button className="nav_toggle-btn"><HiMiniBars3BottomLeft /></button>
       </div>
     </div>
+    </nav>
   )
 }
 

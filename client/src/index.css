@@ -154,6 +154,67 @@ button{
     font-size: 2rem;
 }
 
+/*-----------NAVBAR-----------*/
+nav{
+    background: var(--color-primary);
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+}
 
+.nav_container *{
+    color: white;
+}
 
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.nav_container div{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav_toggle-btn{
+    background: transparent;
+    font-size: 1.5rem;
+    display: none; /*not needed yet*/
+}
+
+.nav_container a{
+    transition: var(--transition);
+}
+
+.nav_container a:hover{
+    color: var(--color-primary-variant); /*transition when hovered*/
+}
+
+.nav_container menu{ /*elections results logout*/
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.theme_toggle-btn{ /*moon icon*/
+    background: transparent;
+    font-size: 1.5rem;
+    display: flex;
+    transition: var(--transition);
+}
+
+.theme_toggle-btn:hover{
+    opacity: 0.75;
+}
