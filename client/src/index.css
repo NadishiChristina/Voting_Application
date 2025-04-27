@@ -218,3 +218,43 @@ nav{
 .theme_toggle-btn:hover{
     opacity: 0.75;
 }
+
+/*-----------MEDIA QUERIES (SMALL SCREEN)-----------*/
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-w-sm);
+    }
+
+    nav{
+        height: 4rem;
+    }
+
+    .nav_container div{
+        gap: 3rem;
+    }
+
+    .nav_toggle-btn{
+        display: inline-block;
+    }
+
+    .nav_container menu{
+        position: fixed;
+        top: 4rem;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        width: 12rem;
+    }
+
+    .nav_container menu a{ /*collapsed nav bar dropdown menu list*/
+        background: var(--color-gray-0);
+        color: var(--color-gray-700);
+        border-bottom: 1px solid var(--color-gray-200);
+        width: 100%;
+        display: grid;
+        place-items: center;
+        height: 4rem;
+        box-shadow: -2rem 4rem 2rem rgba(0, 0, 0, 0.1);
+    }
+    
+}
