@@ -1,5 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import { HiMiniBars3BottomLeft } from "react-icons/hi2";
+import { PiSunLight } from "react-icons/pi";
+import { TbMoon } from "react-icons/tb";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   return (
@@ -11,9 +15,8 @@ const Navbar = () => {
           <NavLink to="/results">Results</NavLink>
           <NavLink to="/logout">Logout</NavLink>
         </menu>
-        <button className="theme_toggle-btn">
-          
-        </button>
+        <button className="theme_toggle-btn"><TbMoon /></button>
+        <button className="theme_toggle-btn"><HiMiniBars3BottomLeft /></button>
       </div>
     </div>
   )
